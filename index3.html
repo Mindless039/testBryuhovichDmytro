@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Left-right-UP-down</title>
+	<meta charset="utf-8">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+	$( document ).ready(function(){
+	  $( ".left" ).click(function(){ 
+	    $( "div" ).animate({
+	      right: "+=100px", 
+	      borderWidth: "-=2px" 
+	      }, "linear"); 
+	  });
+	  $( ".right" ).click(function(){ 
+	    $( "div" ).animate({
+	      right: "-=100px", 
+	      borderWidth: "+=2px" 
+	      }, "linear"); 
+
+});  
+	});
+
+	
+		</script>
+		<script type="text/javascript">
+			$( document ).ready(function(){
+	  $( ".down" ).click(function(){ 
+	    $( "div" ).animate({
+	       bottom: "-=100px", 
+	      borderWidth: "+=2px" 
+	      }, "linear"); 
+	  });
+	  $( ".up" ).click(function(){ 
+	    $( "div" ).animate({
+	       bottom: "+=100px", 
+	      borderWidth: "-=2px" 
+	      }, "linear"); 
+
+});  
+	});
+
+	
+		</script>
+		<style type="text/css">
+		div{
+	width: 80px;
+	height: 80px;
+	border: 1px solid red;
+	margin-top: 50px;
+	position: absolute;
+}	
+
+		</style>
+</head>
+<body>
+	<button class = "left">Left</button>
+		<button class = "right">Right</button>
+		<button class = "up">up</button>
+		<button class = "down">down</button>
+		<div>Click me!</div>
+
+</body>
+</html>

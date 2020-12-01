@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Опросник</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+   $('input[name="radio"]').click(function(){
+  var target = $('#block-' + $(this).val());
+ 
+  $('.block-text').not(target).hide(0);
+  target.fadeIn(500);
+});
+});
+  </script>
+</head>
+<body>
+<h2>Голосование</h2>
+<div>
+<p class="text-center" style="font-size: 18px" ><strong>Что из перечисленого хуже всего?</strong> </p>
+<p>
+<p><label><input type="radio" name="radio" value="1"> Потерять себя </label></p>
+<p><label><input type="radio" name="radio" value="2"> Лишиться семьи </label></p>
+<p><label><input type="radio" name="radio" value="3"> Быть бесполезным </label></p>
+<p><label><input type="radio" name="radio" value="4"> Утратить смысл жизни </label></p>
+<p><label><input type="radio" name="radio" value="5"> Быть презираемым </label></p>
+<p><label><input type="radio" name="radio" value="6"> Coca-cola </label></p>
+</p>
+
+</div>
+<div class="block-text" id="block-1">
+ Ви выбрали: Потерять себя 
+</div>
+ 
+<div class="block-text" id="block-2">
+   Ви выбрали: Лишиться семьи 
+</div>
+ 
+<div class="block-text" id="block-3">
+  Ви выбрали: Быть бесполезным 
+</div>
+<div class="block-text" id="block-4">
+  Ви выбрали: Утратить смысл жизни 
+</div>
+ 
+<div class="block-text" id="block-5">
+   Ви выбрали: Быть презираемым 
+</div>
+ 
+<div class="block-text" id="block-6">
+   Ви выбрали: Coca-cola 
+</div>
+<link rel="stylesheet" href="https://snipp.ru/cdn/bootstrap/4.3/bootstrap.min.css">
+<style type="text/css">
+.block-text {
+  display: none;
+  padding: 15px;
+  border: 1px solid #ec4848;
+}
+</style>
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$('input[name="radio"]').click(function(){
+  var target = $('#block-' + $(this).val());
+
+  $('.block-text').not(target).hide(0);
+  target.fadeIn(500);
+});
+</script>
+
+</body>
+</html>
